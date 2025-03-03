@@ -10,6 +10,24 @@
 
 package main.java.com.work.chapter1;
 
+import java.util.Scanner;
+
 public class GrossPaymentCalculator {
+
+   public static void main(String[] args) {
+    System.out.println("enter the number of hours you  worked");
+
+    Scanner scanner= new Scanner(System.in);
+    int hours = scanner.nextInt();
+
+    System.out.println("enter the employee’s hourly pay rate.");
+   double rate =  scanner.nextDouble();
+   scanner.close();
+
+
+    double  result =  hours * rate;
+    
+    System.out.println(result);
+   }
     
 }
