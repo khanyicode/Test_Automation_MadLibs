@@ -24,7 +24,7 @@ public class GrossPayInputValidation {
 
         while( employeeanswer > maximumhours){
             System.out.println("Invalid entry. Your hours must be between 1 and 40. Try again.\"");
-            double hoursworked = scanner.nextDouble();
+            employeeanswer = scanner.nextDouble();
         }
 
         scanner.close();
