@@ -13,6 +13,34 @@ Task:
 
 
 
+import java.util.Scanner;
+
 public class LetterSearch {
-    
+
+    public static void main(String[] args) {
+
+        // Prompt user for input
+        System.out.println("Enter a string: ");
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        scanner.close();
+
+        boolean letterFound = false;
+
+        // Loop through each character in the string
+        for (int i = 0; i < text.length(); i++) {
+            char currentLetter = text.charAt(i);
+            if (currentLetter == 'A' || currentLetter == 'a') {
+                letterFound = true;
+                break; // Exit loop if 'A' or 'a' is found
+            }
+        }
+
+        // Output the result
+        if (letterFound) {
+            System.out.println("This text contains the letter 'A'.");
+        } else {
+            System.out.println("This text does not contain the letter 'A'.");
+        }
+    }
 }
