@@ -1,4 +1,9 @@
 
+
+package main.java.com.work.chapter5;
+
+import java.util.Scanner;
+ 
 /*
  * VARIABLE SCOPE
  * Write an ‘instant credit check’ program that approves
